@@ -9,11 +9,13 @@ export const Header = () => {
         <header>
             <div className={s.logo}><img src={logo} alt="logo"/></div>
             <nav>
-                <div>Как это работает</div>
-                <div>Отследить посылку</div>
-                <div>Список магазинов</div>
-                <div>Связаться</div>
-                <div>Информация</div>
+                <ul>
+                    <li><a href="#">Как это работает</a></li>
+                    <li><a href="#">Отследить посылку</a></li>
+                    <li><a href="#">Список магазинов</a></li>
+                    <li><a href="#">Связаться</a></li>
+                    <li><a href="#">Информация</a></li>
+                </ul>
             </nav>
             <div className={s.socials}>
                 <img src={whatsapp} alt="whatsApp"/>
