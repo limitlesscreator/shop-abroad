@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './HowIsItWorks.module.sass'
+import {Gallery} from "../Gallery/Gallery";
 export const HowIsItWorks = () => {
     let data = [
         ['01','Вы'],
@@ -53,6 +54,8 @@ export const HowIsItWorks = () => {
                 {/*)}*/}
             </div>
             <button>Сделать заказ</button>
+            <Gallery/>
+
         </div>
     );
 };

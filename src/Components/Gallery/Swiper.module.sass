@@ -1,4 +1,45 @@
 .main
   display: flex
+  margin-top: 64px
+
+.bluePagination
+  width: 638px
+  height: 56px
+  display: flex
+  margin-left: 24px
+  button
+
+
+.usualBtn
+  cursor: pointer
+  color: #454545
+  font-size: 24px
+  background: none
+  border: none
+  height: 56px
+  width: 100%
+  font-family: Gilroy-Regular, sans-serif
+  border-bottom: #454545  solid 4px
+
+.newBtn
+  width: 10px
+  height: 100px
+  background: white
+
+.active
+  &:hover
+  border-bottom: #3253FF  solid 4px
+  color: #3253FF
+  padding-bottom: 24px
+  &:after
+    content: ''
+    display: flex
+    margin: 0 auto
+    width: 8px
+    height: 8px
+
+    background: #3253FF
+    border-radius: 50%
+    position: relative
 
 

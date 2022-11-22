@@ -100,8 +100,14 @@ body {
     width: 648px;
 }
 
-/*Отключает стрелку левую и правую*/
-
-.swiper-button-prev, .swiper-button-next{
-    display: none;
+.myDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/*Отключает стрелку левую и правую слайдера*/
+.swiper-button-prev, .swiper-button-next{
+    /*display: none;*/
+}
+

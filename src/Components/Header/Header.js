@@ -3,18 +3,19 @@ import s from './Header.module.sass'
 import logo from '../../img/logo.svg'
 import telegram from '../../img/telegram.svg'
 import whatsapp from '../../img/whatsApp.svg'
+import {Link, NavLink} from "react-router-dom";
 
 export const Header = () => {
     return (
         <header>
-            <div className={s.logo}><img src={logo} alt="logo"/></div>
+            <Link to={'/'} className={s.logo}><img src={logo} alt="logo"/></Link>
             <nav>
                 <ul>
-                    <li><a href="#">Как это работает</a></li>
-                    <li><a href="#">Отследить посылку</a></li>
-                    <li><a href="#">Список магазинов</a></li>
-                    <li><a href="#">Связаться</a></li>
-                    <li><a href="#">Информация</a></li>
+                    <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/howitworks'}>Как это работает</NavLink>
+                    <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/follow'}>Отследить посылку</NavLink>
+                    <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/list'}>Список магазинов</NavLink>
+                    <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/contact'}>Связаться</NavLink>
+                    <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/information'}>Информация</NavLink>
                 </ul>
             </nav>
             <div className={s.socials}>
