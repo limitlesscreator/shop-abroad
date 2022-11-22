@@ -8,7 +8,6 @@ import {CheckBox} from "../CheckBox/CheckBox";
 export const FollowPackage = () => {
     const [trackNumber, setTrackNumber] = useState('')
     const [packageStatus, setPackageStatus] = useState('')
-    const [isChecked, setIsChecked] = useState(false)
 
     const  checkPackage = () =>{
         let res = fetch(`https://shop-abroad.ru/api/orders/${trackNumber}?t=1612314296`,{
@@ -27,8 +26,10 @@ export const FollowPackage = () => {
                     </div>
                     <div className={s.capcha}>
                         {/*<input type="checkbox"/> Я не робот*/}
-                        <CheckBox/>
-                        <span className={s.notRobot}>Я не робот</span>
+                        <form action="">
+                            <CheckBox/>
+                            <span className={s.notRobot}>Я не робот</span>
+                        </form>
                     </div>
                     {/*<div style={{color: 'white', fontSize:'50px'}}>Status: {packageStatus}</div>*/}
                     <div className={s.subTitle}>

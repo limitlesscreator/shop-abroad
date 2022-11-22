@@ -44,6 +44,7 @@ export const CheckBox = () => {
                     onChange={() => {
                         setIsChecked(!isChecked);
                     }}
+                    required
                 />
                 <animated.svg
                     style={checkboxAnimationStyle}
