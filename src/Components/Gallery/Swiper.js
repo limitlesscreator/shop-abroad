@@ -11,7 +11,7 @@ import "swiper/css/thumbs";
 
 import "./styles.css";
 // import required modules
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import {FreeMode, Keyboard, Mousewheel, Navigation, Pagination, Thumbs} from "swiper";
 
 export function ProSwiper() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -23,7 +23,7 @@ export function ProSwiper() {
                     "--swiper-navigation-color": "#fff",
                     "--swiper-pagination-color": "#fff",
                 }}
-                loop={true}
+                // loop={true}
                 spaceBetween={10}
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
@@ -48,48 +48,43 @@ export function ProSwiper() {
                 <SwiperSlide>
                     <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                </SwiperSlide>
             </Swiper>
+            <div className={'myDiv'}>
+
             <Swiper
+
                 onSwiper={setThumbsSwiper}
-                loop={true}
                 spaceBetween={10}
                 slidesPerView={3}
-                freeMode={true}
-                watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
+                preventInteractionOnTransition={'true'}
+                // freeMode={true}
+                // watchSlidesProgress={true}
+                // modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper"
+                cssMode={true}
+
             >
+                    <SwiperSlide>
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </SwiperSlide>
-                {/*<SwiperSlide>*/}
-                {/*    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />*/}
-                {/*</SwiperSlide>*/}
-                {/*<SwiperSlide>*/}
-                {/*    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />*/}
-                {/*</SwiperSlide>*/}
-                {/*<SwiperSlide>*/}
-                {/*    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />*/}
-                {/*</SwiperSlide>*/}
             </Swiper>
+            </div>
+
         </div>
     );
 }
