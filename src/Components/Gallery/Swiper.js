@@ -32,10 +32,10 @@ export function ProSwiper(props) {
                 spaceBetween={10}
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-                modules={[FreeMode, Navigation, Thumbs,Pagination]}
-                pagination={{
-                    clickable:true,
-                    }}
+                modules={[FreeMode, Navigation, Thumbs]}
+                // pagination={{
+                //     clickable:true,
+                //     }}
                 className="mySwiper2"
             >
                 {props.images.map((el, index) => (

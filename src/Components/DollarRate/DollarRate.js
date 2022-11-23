@@ -4,8 +4,9 @@ import asos from '../../img/asos.png'
 import stockX from '../../img/stockX.png'
 import amazon from '../../img/amazon.png'
 import farfetch from '../../img/farfetch.png'
+import {useNavigate} from "react-router";
 
-export const DollarRate = () => {
+export const DollarRate = ({setModalTypeOneOrder,changeUrl}) => {
     const [rate, setRate] = useState(null)
 
     useEffect(() => {
@@ -31,9 +32,9 @@ export const DollarRate = () => {
                 </div>
                 <div className={s.subtitle}>Надёжный и быстрый сервис доставки заказов с любых интернет магазинов мира</div>
                 <div className={s.buttons}>
-                    <button>Как это работает</button>
-                    <button>Заказать</button>
-                    <button>Отследить посылку</button>
+                    <button onClick={() => changeUrl('/howitworks')}>Как это работает</button>
+                    <button onClick={() => setModalTypeOneOrder(true)}>Заказать</button>
+                    <button onClick={() => changeUrl('/follow')}>Отследить посылку</button>
                 </div>
             </div>
         </div>

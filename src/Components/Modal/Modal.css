@@ -33,8 +33,7 @@ body.active-modal {
   background: #1F1F1F;
   padding: 14px 28px 68px 28px;
   border-radius: 3px;
-  max-width: 600px;
-  min-width: 300px;
+  min-width: 536px;
 }
 
 .close-modal {
@@ -45,3 +44,4 @@ body.active-modal {
   cursor: pointer;
   border-radius: 50%;
 }
+

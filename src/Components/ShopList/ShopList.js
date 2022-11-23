@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ShopList.module.sass'
 import logos from '../../img/logos.png'
-export const ShopList = () => {
+export const ShopList = ({setModalTypeOneOrder}) => {
     return (
         <div className={s.flexElems}>
             <div><img src={logos} alt="logos"/></div>
@@ -19,7 +19,7 @@ export const ShopList = () => {
                         то попробуйте воспользоваться VPN сервисом.
                     </div>
                 </div>
-                <button className={s.orderBtn}>Сделать заказ</button>
+                <button onClick={() => setModalTypeOneOrder(true)} className={s.orderBtn}>Сделать заказ</button>
             </div>
         </div>
     );

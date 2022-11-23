@@ -4,8 +4,9 @@ import telegram from '../../img/telegram.svg'
 import whatsapp from '../../img/whatsApp.svg'
 import search from '../../img/search.svg'
 import {CheckBox} from "../CheckBox/CheckBox";
+import {ModalTypeTwo} from "../Modal/ModalTypeTwo";
 
-export const FollowPackage = () => {
+export const FollowPackage = ({setModalCheckPackage, modalCheckPackage}) => {
     const [trackNumber, setTrackNumber] = useState('')
     const [packageStatus, setPackageStatus] = useState('')
 
@@ -13,11 +14,14 @@ export const FollowPackage = () => {
         let res = fetch(`https://shop-abroad.ru/api/orders/${trackNumber}?t=1612314296`,{
         })
         res.then(data => data.json()).then(status => setPackageStatus(status.status))
+        setModalCheckPackage(true)
     }
 
     return (
         <div className={s.main}>
-                <div>
+            <ModalTypeTwo packageStatus={packageStatus}  modal={modalCheckPackage} setModal={setModalCheckPackage}/>
+
+            <div>
                     <h2 className={s.title}>Отследить посылку</h2>
                     <div className={s.flexElements}>
                         <input onChange={(e) => setTrackNumber(e.currentTarget.value)} value={trackNumber} placeholder={'Введите номер посылки'} type="text"/>

@@ -3,10 +3,9 @@ import "./Modal.css";
 import telegram from "../../img/telegram.svg";
 import whatsapp from "../../img/whatsApp.svg";
 import close from "../../img/close.svg";
-import s from './Modal.module.sass'
+import s from './ModalTypeOne.module.sass'
 import {CheckBox} from "../CheckBox/CheckBox";
-export default function Modal() {
-    const [modal, setModal] = useState(false);
+export default function ModalTypeOne({title,modal,setModal}) {
 
     const toggleModal = () => {
         setModal(!modal);
@@ -20,10 +19,6 @@ export default function Modal() {
 
     return (
         <>
-            <button onClick={toggleModal} className="btn-modal">
-                Open
-            </button>
-
             {modal && (
                 <div className="modal">
                     <div onClick={toggleModal} className="overlay"></div>
@@ -37,8 +32,7 @@ export default function Modal() {
                             <span className={s.notRobot}>Я не робот</span>
                         </div>
                         <p className={s.subTitle}>
-                            Служба поддержки работает <br/>
-                            с 11:00 до 22:00 по МСК
+                            {title}
                         </p>
                         <div className="close-modal" onClick={toggleModal}>
                             <img src={close} alt="close"/>

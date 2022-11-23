@@ -1,13 +1,13 @@
 import React from 'react';
 import s from './Information.module.sass'
 
-export const Information = () => {
+export const Information = ({setBiggesModal}) => {
     return (
         <div className={s.main}>
             <h2 className={s.title}>Информация</h2>
             <div className={s.buttons}>
                 <div>
-                    <button>О нас</button>
+                    <button onClick={() => setBiggesModal(true)}>О нас</button>
                     <button>Тарифы и комиссия</button>
                     <button>Возврат</button>
                 </div>

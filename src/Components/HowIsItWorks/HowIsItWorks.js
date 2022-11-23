@@ -1,17 +1,7 @@
 import React from 'react';
 import s from './HowIsItWorks.module.sass'
 import {Gallery} from "../Gallery/Gallery";
-export const HowIsItWorks = () => {
-    let data = [
-        ['01','Вы'],
-        ['02','Интернет-магазин'],
-        ['03','Выбираете товар\n' +
-        'и отправляете нам ссылки'],
-        ['04','Заключаем договор и мы выкупаем ваш товар'],
-        ['05','Получаем посылку с товаром и отправляем вам'],
-        ['06','Вы получаете заказ уже через 15 дней после отправки'],
-        ['07','Вы и ваша посылка вместе'],
-    ]
+export const HowIsItWorks = ({setModalTypeOneOrder}) => {
     return (
         <div className={s.main}>
             <h2>Как это работает</h2>
@@ -53,7 +43,7 @@ export const HowIsItWorks = () => {
                 {/*    )*/}
                 {/*)}*/}
             </div>
-            <button>Сделать заказ</button>
+            <button onClick={() => setModalTypeOneOrder(true)}>Сделать заказ</button>
             <Gallery/>
 
         </div>

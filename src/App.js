@@ -7,21 +7,30 @@ import {ShopList} from "./Components/ShopList/ShopList";
 import {Contacts} from "./Components/Contacts/Contacts";
 import {Information} from "./Components/Information/Information";
 import {Gallery} from "./Components/Gallery/Gallery";
-import {Route, Routes} from "react-router";
-import Modal from "./Components/Modal/Modal";
+import {Route, Routes, useNavigate} from "react-router";
+import ModalTypeOne from "./Components/Modal/ModalTypeOne";
+import {ModalTypeTwo} from "./Components/Modal/ModalTypeTwo";
+import {ModalTypeBiggest} from "./Components/Modal/ModalTypeBiggest";
+import {Footer} from "./Components/Footer/Footer";
+import {useState} from "react";
 
 function App() {
+    let [biggesModal, setBiggesModal] = useState(false)
+    let [modalTypeOneOrder, setModalTypeOneOrder] = useState(false)
+    let [modalCheckPackage, setModalCheckPackage] = useState(false)
+    const changeUrl = useNavigate()
+
     return (
         <div className="App">
 
             <Header/>
             <Routes>
-                <Route path={'/'} element={<DollarRate/>}/>
-                <Route path={'/howitworks'} element={<HowIsItWorks/>}/>
-                <Route path={'/follow'} element={<FollowPackage/>}/>
-                <Route path={'/list'} element={<ShopList/>}/>
+                <Route  path={'/'} element={<DollarRate changeUrl={changeUrl} setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
+                <Route path={'/howitworks'} element={<HowIsItWorks setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
+                <Route path={'/follow'} element={<FollowPackage modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage}/>}/>
+                <Route path={'/list'} element={<ShopList setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
                 <Route path={'/contact'} element={<Contacts/>}/>
-                <Route path={'/information'} element={<Information/>}/>
+                <Route path={'/information'} element={<Information setBiggesModal={setBiggesModal}/>}/>
             </Routes>
             {/*<DollarRate/>*/}
             {/*<HowIsItWorks/>*/}
@@ -29,8 +38,12 @@ function App() {
             {/*<ShopList/>*/}
             {/*<Contacts/>*/}
             {/*<Information/>*/}
-            <Modal/>
-
+            <ModalTypeOne  title={'Служба поддержки работает\n' +
+            'с 11:00 до 22:00 по МСК'}/>
+            <ModalTypeOne modal={modalTypeOneOrder} setModal={setModalTypeOneOrder} title={'Заказы обрабатываются\n' +
+            'с 11:00 до 22:00 по МСК'}/>
+            <ModalTypeBiggest modal={biggesModal} setModal={setBiggesModal}/>
+            <div><Footer changeUrl={changeUrl}/></div>
         </div>
     );
 }
