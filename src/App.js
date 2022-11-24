@@ -13,6 +13,7 @@ import {ModalTypeTwo} from "./Components/Modal/ModalTypeTwo";
 import {ModalTypeBiggest} from "./Components/Modal/ModalTypeBiggest";
 import {Footer} from "./Components/Footer/Footer";
 import {useState} from "react";
+import {Accordion} from "./Components/Acordion/Accordion";
 
 function App() {
     let [biggesModal, setBiggesModal] = useState(false)
@@ -22,10 +23,10 @@ function App() {
 
     return (
         <div className="App">
-
+            <Accordion/>
             <Header/>
             <Routes>
-                <Route  path={'/'} element={<DollarRate changeUrl={changeUrl} setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
+                <Route  path={'/'} element={<DollarRate modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage} changeUrl={changeUrl} setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
                 <Route path={'/howitworks'} element={<HowIsItWorks setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
                 <Route path={'/follow'} element={<FollowPackage modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage}/>}/>
                 <Route path={'/list'} element={<ShopList setModalTypeOneOrder={setModalTypeOneOrder}/>}/>

@@ -36,8 +36,13 @@ body.active-modal {
   min-width: 536px;
 }
 
+.modal-contentBigges {
+  height: 500px;
+  overflow-y: auto;
+}
+
 .close-modal {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   padding: 5px 7px;

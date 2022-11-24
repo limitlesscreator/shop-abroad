@@ -21,8 +21,11 @@ export  function ModalTypeBiggest({modal,setModal}) {
             {modal && (
                 <div className="modal">
                     <div onClick={toggleModal} className="overlay"></div>
-                    <div className="modal-content">
+                    <div className="modal-content modal-contentBigges">
                         <div className={s.position}>
+                            <div className="close-modal" onClick={toggleModal}>
+                                <img src={close} alt="close"/>
+                            </div>
                             <div className={s.title}>О нас</div>
                             <div className={s.subTitle}>Shop-Abroad — надёжный и быстрый сервис доставки заказов <br/> с любых интернет-магазинов мира.</div>
                             <div className={s.flexContent}>
@@ -47,10 +50,32 @@ export  function ModalTypeBiggest({modal,setModal}) {
                                     <div>Авито</div>
                                 </div>
                             </div>
-                            <div className="close-modal" onClick={toggleModal}>
-                                <img src={close} alt="close"/>
+                            <div className={s.title}>О нас</div>
+                            <div className={s.subTitle}>Shop-Abroad — надёжный и быстрый сервис доставки заказов <br/> с любых интернет-магазинов мира.</div>
+                            <div className={s.flexContent}>
+                                <div>
+                                    <div className={s.itemOfFlex}>Доставка от 10 дней*</div>
+                                    <div className={s.itemOfFlex}>Минимальная комиссия от 3% до 15%</div>
+                                    <div className={s.itemOfFlex}>Собственные склады, никаких посредников</div>
+                                </div>
+                                <div>
+                                    <div className={s.itemOfFlex}>Оформляем таможенные сборы</div>
+                                    <div className={s.itemOfFlex}>Возможность возврата вещей</div>
+                                    <div className={s.itemOfFlex}>Договор и гарантия</div>
+                                </div>
+                            </div>
+                            <div className={s.imagesFlex}>
+                                <div>
+                                    <img src={telegram} alt="telegram"/>
+                                    <div>Telegram-канал</div>
+                                </div>
+                                <div>
+                                    <img src={avito} alt="avito"/>
+                                    <div>Авито</div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             )}

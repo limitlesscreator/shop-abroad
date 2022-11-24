@@ -5,8 +5,10 @@ import stockX from '../../img/stockX.png'
 import amazon from '../../img/amazon.png'
 import farfetch from '../../img/farfetch.png'
 import {useNavigate} from "react-router";
+import {HowIsItWorks} from "../HowIsItWorks/HowIsItWorks";
+import {FollowPackage} from "../FollowPackage/FollowPackage";
 
-export const DollarRate = ({setModalTypeOneOrder,changeUrl}) => {
+export const DollarRate = ({setModalTypeOneOrder,changeUrl,modalCheckPackage,setModalCheckPackage}) => {
     const [rate, setRate] = useState(null)
 
     useEffect(() => {
@@ -28,7 +30,7 @@ export const DollarRate = ({setModalTypeOneOrder,changeUrl}) => {
             <div className={s.delivery}>
                 <div className={s.flexElem}>
                     <h1 className={s.title}><span><span>Доставим ваши заказы со всего мира за 15 дней</span></span></h1>
-                    <div className={s.rate}>{rate ? `Курс ${rate}` : null}</div>
+                    <div className={s.rate}>{rate ? `Курс  $ ${rate}` : null}</div>
                 </div>
                 <div className={s.subtitle}>Надёжный и быстрый сервис доставки заказов с любых интернет магазинов мира</div>
                 <div className={s.buttons}>
@@ -36,7 +38,12 @@ export const DollarRate = ({setModalTypeOneOrder,changeUrl}) => {
                     <button onClick={() => setModalTypeOneOrder(true)}>Заказать</button>
                     <button onClick={() => changeUrl('/follow')}>Отследить посылку</button>
                 </div>
+                <div className={s.buttonsSecondLine}>
+                    <button onClick={() => setModalTypeOneOrder(true)}>Наш TLG канал</button>
+                </div>
             </div>
+            <HowIsItWorks setModalTypeOneOrder={setModalTypeOneOrder}/>
+            <FollowPackage modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage}/>
         </div>
     );
 };
