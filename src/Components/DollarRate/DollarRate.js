@@ -4,9 +4,7 @@ import asos from '../../img/asos.png'
 import stockX from '../../img/stockX.png'
 import amazon from '../../img/amazon.png'
 import farfetch from '../../img/farfetch.png'
-import {useNavigate} from "react-router";
 import {HowIsItWorks} from "../HowIsItWorks/HowIsItWorks";
-import {FollowPackage} from "../FollowPackage/FollowPackage";
 
 export const DollarRate = ({setModalTypeOneOrder,changeUrl,modalCheckPackage,setModalCheckPackage}) => {
     const [rate, setRate] = useState(null)
@@ -42,8 +40,10 @@ export const DollarRate = ({setModalTypeOneOrder,changeUrl,modalCheckPackage,set
                     <button onClick={() => setModalTypeOneOrder(true)}>Наш TLG канал</button>
                 </div>
             </div>
+
+
+
             <HowIsItWorks setModalTypeOneOrder={setModalTypeOneOrder}/>
-            <FollowPackage modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage}/>
         </div>
     );
 };

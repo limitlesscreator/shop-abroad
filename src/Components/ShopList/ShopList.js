@@ -4,6 +4,7 @@ import logos from '../../img/logos.png'
 export const ShopList = ({setModalTypeOneOrder}) => {
     return (
         <div className={s.flexElems}>
+            <h2 className={s.titleSicret}>Список магазинов</h2>
             <div><img src={logos} alt="logos"/></div>
             <div className={s.rightSide}>
                 <h2 className={s.title}>Список магазинов</h2>

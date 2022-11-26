@@ -10,8 +10,7 @@ import {
 
 import s from './CheckBox.module.sass'
 
-export const CheckBox = () => {
-    const [isChecked, setIsChecked] = useState(false);
+export const CheckBox = ({isChecked,setIsChecked}) => {
     const checkboxAnimationRef = useSpringRef();
     const checkboxAnimationStyle = useSpring({
         backgroundColor: isChecked ? "#3253FF" : "#1F1F1F",

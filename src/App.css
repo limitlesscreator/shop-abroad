@@ -1,8 +1,21 @@
 .App {
-  width: 1320px;
   margin: 0 auto;
-  font-family: Gilroy-Regular, sans-serif
+  font-family: Gilroy-Regular, sans-serif;
 }
+
+@media (max-width: 1350px){
+  .App{
+    width: 1200px;
+  }
+}
+@media (max-width: 1200px){
+  .App{
+    width: 100%;
+  }
+}
+
+
+
 
 *{
   margin: 0;
@@ -33,6 +46,3 @@
   color: white;
 }
 
-.wrapperFooter{
-  margin-top: 50px;
-}

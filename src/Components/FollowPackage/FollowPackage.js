@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import s from './FollowPackage.module.sass'
 import telegram from '../../img/telegram.svg'
 import whatsapp from '../../img/whatsApp.svg'
@@ -9,13 +9,24 @@ import {ModalTypeTwo} from "../Modal/ModalTypeTwo";
 export const FollowPackage = ({setModalCheckPackage, modalCheckPackage}) => {
     const [trackNumber, setTrackNumber] = useState('')
     const [packageStatus, setPackageStatus] = useState('')
+    const [isChecked, setIsChecked] = useState(false);
+    const [errorBox, setErrorBox] = useState(false)
 
     const  checkPackage = () =>{
-        let res = fetch(`https://shop-abroad.ru/api/orders/${trackNumber}?t=1612314296`,{
-        })
-        res.then(data => data.json()).then(status => setPackageStatus(status.status))
-        setModalCheckPackage(true)
+        if (isChecked){
+            let res = fetch(`https://shop-abroad.ru/api/orders/${trackNumber}?t=1612314296`,{
+            })
+            res.then(data => data.json()).then(status => setPackageStatus(status.status))
+            setModalCheckPackage(true)
+        }
+        else {
+            setErrorBox(true)
+        }
     }
+
+    useEffect(() => {
+        setErrorBox(false)
+    },[isChecked])
 
     return (
         <div className={s.main}>
@@ -31,9 +42,10 @@ export const FollowPackage = ({setModalCheckPackage, modalCheckPackage}) => {
                     <div className={s.capcha}>
                         {/*<input type="checkbox"/> Я не робот*/}
                         <form action="">
-                            <CheckBox/>
+                            <CheckBox isChecked={isChecked} setIsChecked={setIsChecked}/>
                             <span className={s.notRobot}>Я не робот</span>
                         </form>
+                        {errorBox ? <div className={s.error}>Поставьте пожалуйста отметку</div> : null}
                     </div>
                     {/*<div style={{color: 'white', fontSize:'50px'}}>Status: {packageStatus}</div>*/}
                     <div className={s.subTitle}>

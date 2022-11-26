@@ -45,7 +45,6 @@ export const HowIsItWorks = ({setModalTypeOneOrder}) => {
             </div>
             <button onClick={() => setModalTypeOneOrder(true)}>Сделать заказ</button>
             <Gallery/>
-
         </div>
     );
 };

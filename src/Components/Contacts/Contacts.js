@@ -30,10 +30,10 @@ export const Contacts = () => {
                             с 11:00 до 22:00 по МСК
                         </div>
                     </div>
-                    <div>
+                    <div className={s.specialNumber}>
                         <h3 className={s.title}>Клиентский сервис</h3>
                         <div className={s.number}>
-                            <img src={phone} alt="phone"/>
+                            <img className={s.logoNumber} src={phone} alt="phone"/>
                             <div>8 (800) 233 2321</div>
                         </div>
                         <div className={s.subTitle}>

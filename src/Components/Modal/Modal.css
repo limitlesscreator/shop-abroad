@@ -1,4 +1,4 @@
-body.active-modalMyMy {
+body.active-modalMy {
   overflow-y: hidden;
 }
 
@@ -9,24 +9,28 @@ body.active-modalMyMy {
   font-size: 18px;
 }
 
-.modalMy, .overlay {
-  width: 100vw;
-  height: 100vh;
+.overlay {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   position: fixed;
   z-index: 20;
+
+}
+
+.myModal{
+
 }
 
 .overlay {
   background: rgba(49,49,49,0.8);
+
 }
 .modal-contentMy {
   z-index: 21;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
@@ -36,10 +40,7 @@ body.active-modalMyMy {
   min-width: 536px;
 }
 
-.modal-contentBiggesMy {
-  height: 500px;
-  overflow-y: auto;
-}
+
 
 .close-modal {
   position: fixed;
