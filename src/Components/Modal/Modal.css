@@ -1,4 +1,4 @@
-body.active-modal {
+body.active-modalMyMy {
   overflow-y: hidden;
 }
 
@@ -9,7 +9,7 @@ body.active-modal {
   font-size: 18px;
 }
 
-.modal, .overlay {
+.modalMy, .overlay {
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -23,7 +23,7 @@ body.active-modal {
 .overlay {
   background: rgba(49,49,49,0.8);
 }
-.modal-content {
+.modal-contentMy {
   z-index: 21;
   position: absolute;
   top: 40%;
@@ -36,7 +36,7 @@ body.active-modal {
   min-width: 536px;
 }
 
-.modal-contentBigges {
+.modal-contentBiggesMy {
   height: 500px;
   overflow-y: auto;
 }

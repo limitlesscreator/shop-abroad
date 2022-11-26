@@ -6,14 +6,17 @@ import {FollowPackage} from "./Components/FollowPackage/FollowPackage";
 import {ShopList} from "./Components/ShopList/ShopList";
 import {Contacts} from "./Components/Contacts/Contacts";
 import {Information} from "./Components/Information/Information";
-import {Gallery} from "./Components/Gallery/Gallery";
 import {Route, Routes, useNavigate} from "react-router";
 import ModalTypeOne from "./Components/Modal/ModalTypeOne";
-import {ModalTypeTwo} from "./Components/Modal/ModalTypeTwo";
 import {ModalTypeBiggest} from "./Components/Modal/ModalTypeBiggest";
 import {Footer} from "./Components/Footer/Footer";
 import {useState} from "react";
-import {Accordion} from "./Components/Acordion/Accordion";
+import {Tariffs} from "./Components/WordDocuments/Commission/Tariffs";
+import {Faq} from "./Components/WordDocuments/FAQ/Faq";
+import {Returns} from "./Components/WordDocuments/Returns/Returns";
+import {ListBannedProducts} from "./Components/WordDocuments/ListBannedProducts/ListBannedProducts";
+import {TariffComission} from "./Components/WordDocuments/Commission/TariffComission";
+import {Commission} from "./Components/WordDocuments/Commission/Commission";
 
 function App() {
     let [biggesModal, setBiggesModal] = useState(false)
@@ -23,7 +26,6 @@ function App() {
 
     return (
         <div className="App">
-            <Accordion/>
             <Header/>
             <Routes>
                 <Route  path={'/'} element={<DollarRate modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage} changeUrl={changeUrl} setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
@@ -32,19 +34,21 @@ function App() {
                 <Route path={'/list'} element={<ShopList setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
                 <Route path={'/contact'} element={<Contacts/>}/>
                 <Route path={'/information'} element={<Information setBiggesModal={setBiggesModal}/>}/>
+
+                <Route path={'/tarifComission'} element={<TariffComission changeUrl={changeUrl}/>}/>
+                <Route path={'/tariffs'} element={<Tariffs/>}/>
+                <Route path={'/commission'} element={<Commission/>}/>
+
+                <Route path={'/faq'} element={<Faq/>}/>
+                <Route path={'/returns'} element={<Returns/>}/>
+                <Route path={'/bannedProducts'} element={<ListBannedProducts/>}/>
             </Routes>
-            {/*<DollarRate/>*/}
-            {/*<HowIsItWorks/>*/}
-            {/*<FollowPackage/>*/}
-            {/*<ShopList/>*/}
-            {/*<Contacts/>*/}
-            {/*<Information/>*/}
             <ModalTypeOne  title={'Служба поддержки работает\n' +
             'с 11:00 до 22:00 по МСК'}/>
             <ModalTypeOne modal={modalTypeOneOrder} setModal={setModalTypeOneOrder} title={'Заказы обрабатываются\n' +
             'с 11:00 до 22:00 по МСК'}/>
             <ModalTypeBiggest modal={biggesModal} setModal={setBiggesModal}/>
-            <div><Footer changeUrl={changeUrl}/></div>
+            <div className={'wrapperFooter'}><Footer changeUrl={changeUrl}/></div>
         </div>
     );
 }

@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.titleForModals{
+  text-align: left;
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  color: white;
+}

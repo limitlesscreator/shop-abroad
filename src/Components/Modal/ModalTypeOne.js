@@ -12,17 +12,17 @@ export default function ModalTypeOne({title,modal,setModal}) {
     };
 
     if (modal) {
-        document.body.classList.add('active-modal')
+        document.body.classList.add('active-modalMy')
     } else {
-        document.body.classList.remove('active-modal')
+        document.body.classList.remove('active-modalMy')
     }
 
     return (
         <>
             {modal && (
-                <div className="modal">
+                <div className="myModal">
                     <div onClick={toggleModal} className="overlay"></div>
-                    <div className="modal-content">
+                    <div className="modal-contentMy">
                         <div className={s.socials}>
                             <img src={telegram} alt="telegram"/>
                             <img src={whatsapp} alt="whatsapp"/>

@@ -8,18 +8,18 @@ export  function ModalTypeTwo({modal,setModal,packageStatus}) {
     };
 
     if (modal) {
-        document.body.classList.add('active-modal')
+        document.body.classList.add('active-modalMy')
     } else {
-        document.body.classList.remove('active-modal')
+        document.body.classList.remove('active-modalMy')
     }
 
     return (
         <>
 
             {modal && (
-                <div className="modal">
+                <div className="myModal">
                     <div onClick={toggleModal} className="overlay"></div>
-                    <div className="modal-content">
+                    <div className="modal-contentMy">
                         <div className={s.title}>Статус заказа</div>
                         <p style={{whiteSpace: "nowrap"}} className={s.subTitle}>
                             {packageStatus === "В пути" ? <> Выкуплен у магазина, ожидает <br/> поступления на склад.</>: null}
