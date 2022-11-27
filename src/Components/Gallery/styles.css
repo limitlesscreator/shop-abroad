@@ -64,8 +64,9 @@ body {
 }
 
 .mySwiper2 {
-    min-height: 460px;
+    height: 460px;
     width: 648px;
+
 }
 
 .mySwiper {
@@ -95,6 +96,7 @@ body {
 .mySwiper .swiper-slide {
     height: 142px;
     opacity: 0.4;
+    margin-bottom: 10px;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -111,7 +113,7 @@ body {
 .myDiv .swiper-wrapper{
     display: flex;
     flex-wrap: wrap;
-    height: 312px;
+    min-height: 312px;
     width: 648px;
 }
 

@@ -11,8 +11,9 @@ export const Contacts = () => {
                     <div>
                         <h3 className={s.title}>Для заказа посылок</h3>
                         <div className={s.socials}>
-                            <img src={telegram} alt="telegram"/>
-                            <img src={whatsapp} alt="whatsapp"/>
+                            <a  style={{cursor: 'pointer'}} href="https://t.me/shop_abroad"><img src={telegram} alt="telegram"/></a>
+
+                            <a style={{cursor: 'pointer'}} href="https://wa.me/message/T5KNG6Q7CQ7XM1"><img src={whatsapp} alt="whatsapp"/></a>
                         </div>
                         <div className={s.subTitle}>
                             Заказы обрабатываеются <br/>
@@ -22,8 +23,8 @@ export const Contacts = () => {
                     <div>
                         <h3 className={s.title}>Служба поддержки</h3>
                         <div className={s.socials}>
-                            <img src={telegram} alt="telegram"/>
-                            <img src={whatsapp} alt="whatsapp"/>
+                            <a href="https://t.me/shop_abroad_support"><img src={telegram} alt="telegram"/></a>
+                            <a style={{cursor: 'pointer'}} href=""><img src={whatsapp} alt="whatsapp"/></a>
                         </div>
                         <div className={s.subTitle}>
                             Служба поддержки работает <br/>
@@ -34,12 +35,12 @@ export const Contacts = () => {
                         <h3 className={s.title}>Клиентский сервис</h3>
                         <div className={s.number}>
                             <img className={s.logoNumber} src={phone} alt="phone"/>
-                            <div className={s.numberPhone}>8 (800) 233 2321</div>
+                            <div className={s.numberPhone}>8 (800) 333 9183</div>
                         </div>
                         <div className={s.subTitle}>
-                            ООО <br/>
-                            ИНН <br/>
-                            ОГРН
+                            ООО "ЖОЗЕФИНА" <br/>
+                            ИНН 9723132333<br/>
+                            ОГРН 5077746358366
                         </div>
 
                     </div>

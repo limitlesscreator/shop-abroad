@@ -50,6 +50,9 @@ export  function ModalTypeBiggest({modal,setModal}) {
                                         <div>Авито</div>
                                     </div>
                                 </div>
+                                <div className={s.littleSubtitle}>
+                                    * Доставка от 10 дней возможна в города, где находятся наши распределительные пункты (Москва, Санкт-Петербург, Челябинск, Казань, Новосибирск)
+                                </div>
                             </div>
 
                         </div>
