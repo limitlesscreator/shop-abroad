@@ -24,24 +24,17 @@ export const HowIsItWorks = ({setModalTypeOneOrder}) => {
                     <div className={s.title}>Заключаем договор и мы выкупаем ваш товар</div>
                 </div>
                 <div className={s.elem}>
-                    <div className={s.sircle}>07</div>
-                    <div className={s.title}>Вы и ваша посылка вместе</div>
+                    <div className={s.sircle}>05</div>
+                    <div className={s.title}>Получаем посылку с товаром и отправляем вам</div>
                 </div>
                 <div className={s.elem}>
                     <div className={s.sircle}>06</div>
                     <div className={s.title}>Вы получаете заказ уже через 15 дней после отправки</div>
                 </div>
                 <div className={s.elem}>
-                    <div className={s.sircle}>05</div>
-                    <div className={s.title}>Получаем посылку с товаром и отправляем вам</div>
+                    <div className={s.sircle}>07</div>
+                    <div className={s.title}>Вы и ваша посылка вместе</div>
                 </div>
-                {/*{data.map(el => (*/}
-                {/*    <div className={s.elem}>*/}
-                {/*        <div className={s.sircle}>{el[0]}</div>*/}
-                {/*        <div className={s.title}>{el[1]}</div>*/}
-                {/*    </div>*/}
-                {/*    )*/}
-                {/*)}*/}
             </div>
             <button onClick={() => setModalTypeOneOrder(true)}>Сделать заказ</button>
             <Gallery/>

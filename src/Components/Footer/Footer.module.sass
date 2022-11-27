@@ -1,6 +1,21 @@
 .buttons
     display: flex
     margin-right: 50px
+
+    @media (max-width: 1350px)
+
+    @media (max-width: 1200px)
+
+    @media (max-width: 900px)
+
+    @media (max-width: 760px)
+        margin-right: 0
+
+    @media (max-width: 480px)
+        flex-wrap: wrap
+        justify-content: center
+
+    @media (max-width: 320px)
     button
         font-family: 'Gilroy-Bold', sans-serif
         font-size: 16px
@@ -16,11 +31,17 @@
         @media (max-width: 1200px)
 
         @media (max-width: 900px)
-            padding: 14px 14px
+            padding: 14px
 
         @media (max-width: 760px)
+            padding: 5px 10px
+            font-size: 14px
+            margin: 0
 
         @media (max-width: 480px)
+            width: 100%
+            margin-bottom: 10px
+            padding: 7px 10px
 
         @media (max-width: 320px)
         &:hover
@@ -48,9 +69,42 @@ footer
     align-items: center
     box-shadow: 0 0 0 100vmax #353535
     clip-path: inset(0 -100vmax)
+    @media (max-width: 1350px)
+
+    @media (max-width: 1200px)
+
+    @media (max-width: 900px)
+
+    @media (max-width: 760px)
+        padding-left: 20px
+
+    @media (max-width: 480px)
+        justify-content: center
+        flex-wrap: wrap
+        height: 100%
+        padding-top: 10px
+        padding-bottom: 10px
+
+    @media (max-width: 320px)
     a
         color: white
         text-decoration: none
         &:last-child
             margin-left: 25px
+            @media (max-width: 1350px)
+
+            @media (max-width: 1200px)
+
+            @media (max-width: 900px)
+
+            @media (max-width: 760px)
+                margin-left: 10px
+                text-align: right
+
+            @media (max-width: 480px)
+                display: block
+                width: 100%
+                text-align: center
+
+            @media (max-width: 320px)
 

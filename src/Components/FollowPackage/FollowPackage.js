@@ -31,7 +31,6 @@ export const FollowPackage = ({setModalCheckPackage, modalCheckPackage}) => {
     return (
         <div className={s.main}>
             <ModalTypeTwo packageStatus={packageStatus}  modal={modalCheckPackage} setModal={setModalCheckPackage}/>
-
             <div>
                     <h2 className={s.title}>Отследить посылку</h2>
                     <div className={s.flexElements}>

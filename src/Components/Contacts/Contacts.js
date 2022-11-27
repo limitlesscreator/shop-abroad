@@ -34,7 +34,7 @@ export const Contacts = () => {
                         <h3 className={s.title}>Клиентский сервис</h3>
                         <div className={s.number}>
                             <img className={s.logoNumber} src={phone} alt="phone"/>
-                            <div>8 (800) 233 2321</div>
+                            <div className={s.numberPhone}>8 (800) 233 2321</div>
                         </div>
                         <div className={s.subTitle}>
                             ООО <br/>

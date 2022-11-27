@@ -121,6 +121,26 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 1350px){}
+
+@media (max-width: 1200px){}
+
+@media (max-width: 900px){}
+
+@media (max-width: 760px){
+    .myDiv{
+        display: none;
+    }
+    .mySwiper2{
+        width: 100%;
+        min-height: 100%;
+    }
+}
+
+@media (max-width: 480px){}
+
+@media (max-width: 320px){}
+
 /*Отключает стрелку левую и правую слайдера*/
 .swiper-button-prev, .swiper-button-next{
     /*display: none;*/

@@ -21,8 +21,8 @@ export function BoostrapHeader({changeUrl}) {
         <>
                 <Navbar collapseOnSelect  key='expand' bg="dark"  expand='expand' variant="dark" className="mb-3">
                     <Container  fluid>
-                        <Navbar.Brand  href="#">
-                            <Link to={'/'} className={s.logo}><img src={logo} alt="logo"/></Link>
+                        <Navbar.Brand style={{width: '220px'}}  href="#">
+                            <Link to={'/'} className={s.logo}><img className={s.logo} src={logo} alt="logo"/></Link>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
                         <Navbar.Offcanvas

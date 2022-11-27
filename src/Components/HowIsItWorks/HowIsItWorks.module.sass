@@ -2,6 +2,18 @@
     margin-top: 100px
     min-height: 100vh
     margin-bottom: 150px
+    @media (max-width: 1350px)
+
+    @media (max-width: 1200px)
+
+    @media (max-width: 900px)
+
+    @media (max-width: 760px)
+        margin-bottom: 0
+
+    @media (max-width: 480px)
+
+    @media (max-width: 320px)
     button
         display: block
         font-family: 'Gilroy-Bold', sans-serif
@@ -60,6 +72,19 @@ h2
     font-size: 48px
     text-align: center
     color: white
+    @media (max-width: 1350px)
+
+    @media (max-width: 1200px)
+
+    @media (max-width: 900px)
+
+    @media (max-width: 760px)
+        font-size: 35px
+
+    @media (max-width: 480px)
+        font-size: 30px
+
+    @media (max-width: 320px)
 
 .elem
     margin-right: 12px
@@ -79,11 +104,33 @@ h2
 
     @media (max-width: 900px)
 
+    @media (max-width: 771px)
+        &:last-child:after
+            display: none
+        &:after
+            content: url('../../img/arrow.svg')
+            position: absolute
+            bottom: -30px
+            left: calc(312px / 2)
+            transform: translate(-50%,0%)
+            @media (max-width: 1350px)
+
+            @media (max-width: 1200px)
+
+            @media (max-width: 900px)
+
+            @media (max-width: 760px)
+
+            @media (max-width: 480px)
+                left: calc(266px / 2)
+
     @media (max-width: 760px)
 
     @media (max-width: 480px)
+        width: 266px
+        height: 180px
+        padding: 30px 10px 0
 
-    @media (max-width: 320px)
 .elem:first-child
     margin-left: 0
     @media (max-width: 1350px)
@@ -129,6 +176,16 @@ h2
     font-size: 32px
     font-family: 'Gilroy-Bold', sans-serif
     transform: translate(156px - 53px, -50%)
+    @media (max-width: 1350px)
+
+    @media (max-width: 1200px)
+
+    @media (max-width: 900px)
+
+    @media (max-width: 760px)
+
+    @media (max-width: 480px)
+        transform: translate(calc(266px / 2) - 53px, -50%)
 
 .title
     font-family: 'Gilroy-Medium', sans-serif
