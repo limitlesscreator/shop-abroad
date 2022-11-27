@@ -37,7 +37,7 @@ body.active-modalMy {
   background: #1F1F1F;
   padding: 14px 28px 68px 28px;
   border-radius: 3px;
-  min-width: 536px;
+  max-width: 536px;
 }
 
 
@@ -50,4 +50,24 @@ body.active-modalMy {
   cursor: pointer;
   border-radius: 50%;
 }
+
+@media (max-width: 1350px){
+
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 900px){
+
+}
+
+@media (max-width: 760px){
+  .close-modal {
+    top: 65px;
+    right: 30px;
+  }
+}
+
 

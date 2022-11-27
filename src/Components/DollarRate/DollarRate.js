@@ -10,10 +10,10 @@ export const DollarRate = ({setModalTypeOneOrder,changeUrl,modalCheckPackage,set
     const [rate, setRate] = useState(null)
 
     useEffect(() => {
-        let res = fetch('https://shop-abroad.ru/api/parameters?t=1612315498',{
+        let res = fetch('https://shop-abroad.ru/api/data',{
             cache: "no-cache"
         })
-        res.then(data => data.json()).then(rate => setRate(rate.exchangeRate))
+        res.then(data => data.json()).then(rate => setRate(rate.currencies[1].exchange_rate))
     })
 
     return (

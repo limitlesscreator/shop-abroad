@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Header.module.sass'
-import logo from '../../img/logo.svg'
+import logo from '../../img/logo.png'
 import telegram from '../../img/telegram.svg'
 import whatsapp from '../../img/whatsApp.svg'
 import {Link, NavLink} from "react-router-dom";
@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header>
             <div className={s.position}>
-                <Link to={'/'} className={s.logo}><img src={logo} alt="logo"/></Link>
+                <Link to={'/'} className={s.logo}><img className={s.photoLogo} src={logo} alt="logo"/></Link>
                 <div className={s.nav}>
                     <ul>
                         <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/howitworks'}>Как это работает</NavLink>

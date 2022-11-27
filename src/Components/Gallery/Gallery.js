@@ -10,7 +10,7 @@ export const Gallery = () => {
             <ProSwiper images={productImages}/>
             <div className={s.telegramAvito}>
                     <button>Наш TLG канал</button>
-                    <div><a href="#"><img src={avito} alt="avito"/></a></div>
+                    <div className={s.avito}><a href="#"><img  src={avito} alt="avito"/></a></div>
             </div>
         </div>
     );

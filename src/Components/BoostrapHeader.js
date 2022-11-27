@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {Link, NavLink} from "react-router-dom";
 import s from "./BoostrapHeader.module.sass";
-import logo from "../img/logo.svg";
+import logo from "../img/logo.png";
 import React from "react";
 
 export function BoostrapHeader({changeUrl}) {
