@@ -16,7 +16,7 @@ export const Information = ({setBiggesModal}) => {
                 <div>
                     <button onClick={() => navigator('/faq')}>FAQ</button>
                     <button onClick={() => navigator('/bannedProducts')}>Список запрещённых товаров</button>
-                    <button>Политика</button>
+                    <a href="https://docs.google.com/document/d/1S8d8ZeAq9wSlFzc_tbq52YnT0B-rVPvPWcmYjy8oGKo/edit"><button>Политика</button></a>
                 </div>
             </div>
         </div>

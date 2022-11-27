@@ -20,8 +20,8 @@ export const Header = () => {
                     </ul>
                 </div>
                 <div className={s.socials}>
-                    <img src={whatsapp} alt="whatsApp"/>
-                    <img src={telegram} alt="telegram"/>
+                    <a href="https://wa.me/message/T5KNG6Q7CQ7XM1"><img src={whatsapp} alt="whatsApp"/></a>
+                    <a href="https://t.me/shop_abroad"><img src={telegram} alt="telegram"/></a>
                 </div>
             </div>
         </header>

@@ -57,8 +57,8 @@ export const FollowPackage = ({setModalCheckPackage, modalCheckPackage}) => {
                 </div>
                 <div className={s.circle}>
                     <div className={s.socials}>
-                        <img src={telegram} alt="telegram"/>
-                        <img src={whatsapp} alt="whatsapp"/>
+                        <a href="https://t.me/shop_abroad"><img src={telegram} alt="telegram"/></a>
+                        <a href="https://wa.me/message/T5KNG6Q7CQ7XM1"><img src={whatsapp} alt="whatsApp"/></a>
                     </div>
                     <div className={s.subTitleSocial}>Служба поддержки работает
                         с 11:00 до 22:00 по МСК</div>

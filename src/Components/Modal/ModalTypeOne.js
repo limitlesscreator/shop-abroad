@@ -35,8 +35,8 @@ export default function ModalTypeOne({title,modal,setModal}) {
                     <div className="overlay">
                         <div className="modal-contentMy">
                             <div className={s.socials}>
-                                <img src={telegram} alt="telegram"/>
-                                <img src={whatsapp} alt="whatsapp"/>
+                                <a href="https://t.me/shop_abroad"><img src={telegram} alt="telegram"/></a>
+                                <a href="https://wa.me/message/T5KNG6Q7CQ7XM1"><img src={whatsapp} alt="whatsApp"/></a>
                             </div>
                             <div className={s.positionDiv}>
                                 <CheckBox isChecked={isChecked} setIsChecked={setIsChecked}/>
