@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/shop-abroad/static/css/main.8aa62f04.css",
-    "main.js": "/shop-abroad/static/js/main.07b22f7d.js",
+    "main.css": "/shop-abroad/static/css/main.432acb20.css",
+    "main.js": "/shop-abroad/static/js/main.39d5646e.js",
     "static/js/787.e8296182.chunk.js": "/shop-abroad/static/js/787.e8296182.chunk.js",
-    "static/media/slider01.png": "/shop-abroad/static/media/slider01.fcb1db92046a10c7a4bd.png",
+    "static/media/package2.jpg": "/shop-abroad/static/media/package2.cc23a7393d75ca684443.jpg",
+    "static/media/package3.HEIC": "/shop-abroad/static/media/package3.43255f4e37c4b9a35c41.HEIC",
+    "static/media/package1.jpg": "/shop-abroad/static/media/package1.e631282dcc507bb34bff.jpg",
     "static/media/logo.png": "/shop-abroad/static/media/logo.4919480a29270dd8ffc7.png",
     "static/media/logos.png": "/shop-abroad/static/media/logos.d5b34a35e0330274f272.png",
     "static/media/slider02.png": "/shop-abroad/static/media/slider02.23a215f50041f6abf96c.png",
@@ -17,12 +19,12 @@
     "static/media/close.svg": "/shop-abroad/static/media/close.2b7cfff3c6fb11710a2fca5edae2fc1d.svg",
     "static/media/search.svg": "/shop-abroad/static/media/search.a67493ec092130d784e5dd2ca95e69e2.svg",
     "static/media/blueMark.svg": "/shop-abroad/static/media/blueMark.b4919069b175bec01a9a.svg",
-    "main.8aa62f04.css.map": "/shop-abroad/static/css/main.8aa62f04.css.map",
-    "main.07b22f7d.js.map": "/shop-abroad/static/js/main.07b22f7d.js.map",
+    "main.432acb20.css.map": "/shop-abroad/static/css/main.432acb20.css.map",
+    "main.39d5646e.js.map": "/shop-abroad/static/js/main.39d5646e.js.map",
     "787.e8296182.chunk.js.map": "/shop-abroad/static/js/787.e8296182.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aa62f04.css",
-    "static/js/main.07b22f7d.js"
+    "static/css/main.432acb20.css",
+    "static/js/main.39d5646e.js"
   ]
 }
