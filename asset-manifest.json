@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shop-abroad/static/css/main.afc7e439.css",
-    "main.js": "/shop-abroad/static/js/main.2d899d6d.js",
+    "main.css": "/shop-abroad/static/css/main.d2cba0a4.css",
+    "main.js": "/shop-abroad/static/js/main.5bf478e4.js",
     "static/js/787.e8296182.chunk.js": "/shop-abroad/static/js/787.e8296182.chunk.js",
+    "static/media/package9.png": "/shop-abroad/static/media/package9.c602a8b50f9686e5c38b.png",
     "static/media/package8.jpg": "/shop-abroad/static/media/package8.fdda989a48f3072ed7f4.jpg",
     "static/media/package2.jpg": "/shop-abroad/static/media/package2.76534aec71c110190bad.jpg",
     "static/media/package3.jpg": "/shop-abroad/static/media/package3.ca7391e4b4b7c36d2422.jpg",
     "static/media/package1.jpg": "/shop-abroad/static/media/package1.4b699fd1ca000f1b7db5.jpg",
-    "static/media/package9.jpg": "/shop-abroad/static/media/package9.33a7354f3f05b1f80e77.jpg",
     "static/media/package5.jpg": "/shop-abroad/static/media/package5.fca3b5f55a012aa2bd4a.jpg",
     "static/media/package4.jpg": "/shop-abroad/static/media/package4.dae202e11a79faa06b2d.jpg",
     "static/media/package7.jpg": "/shop-abroad/static/media/package7.342f05182289c7ca2a14.jpg",
@@ -23,12 +23,12 @@
     "static/media/close.svg": "/shop-abroad/static/media/close.2b7cfff3c6fb11710a2fca5edae2fc1d.svg",
     "static/media/search.svg": "/shop-abroad/static/media/search.a67493ec092130d784e5dd2ca95e69e2.svg",
     "static/media/blueMark.svg": "/shop-abroad/static/media/blueMark.b4919069b175bec01a9a.svg",
-    "main.afc7e439.css.map": "/shop-abroad/static/css/main.afc7e439.css.map",
-    "main.2d899d6d.js.map": "/shop-abroad/static/js/main.2d899d6d.js.map",
+    "main.d2cba0a4.css.map": "/shop-abroad/static/css/main.d2cba0a4.css.map",
+    "main.5bf478e4.js.map": "/shop-abroad/static/js/main.5bf478e4.js.map",
     "787.e8296182.chunk.js.map": "/shop-abroad/static/js/787.e8296182.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afc7e439.css",
-    "static/js/main.2d899d6d.js"
+    "static/css/main.d2cba0a4.css",
+    "static/js/main.5bf478e4.js"
   ]
 }
