@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop-abroad/static/css/main.3eb26b5b.css",
-    "main.js": "/shop-abroad/static/js/main.f1c1094d.js",
+    "main.css": "/shop-abroad/static/css/main.20f2f1d1.css",
+    "main.js": "/shop-abroad/static/js/main.20bbb106.js",
     "static/js/787.e8296182.chunk.js": "/shop-abroad/static/js/787.e8296182.chunk.js",
     "static/media/package9.png": "/shop-abroad/static/media/package9.c602a8b50f9686e5c38b.png",
     "static/media/package8.jpg": "/shop-abroad/static/media/package8.fdda989a48f3072ed7f4.jpg",
@@ -12,6 +12,7 @@
     "static/media/package4.jpg": "/shop-abroad/static/media/package4.dae202e11a79faa06b2d.jpg",
     "static/media/package7.jpg": "/shop-abroad/static/media/package7.342f05182289c7ca2a14.jpg",
     "static/media/package6.jpg": "/shop-abroad/static/media/package6.dac7c4f2858e377ffdc0.jpg",
+    "static/media/visa.png": "/shop-abroad/static/media/visa.769c362e450970817422.png",
     "static/media/logo.svg": "/shop-abroad/static/media/logo.dfc1f59e690b104c8ed14117ce83e8e5.svg",
     "static/media/whatsApp.svg": "/shop-abroad/static/media/whatsApp.710713b807c6d3c115dd094a9cf22090.svg",
     "index.html": "/shop-abroad/index.html",
@@ -22,12 +23,12 @@
     "static/media/close.svg": "/shop-abroad/static/media/close.2b7cfff3c6fb11710a2fca5edae2fc1d.svg",
     "static/media/search.svg": "/shop-abroad/static/media/search.a67493ec092130d784e5dd2ca95e69e2.svg",
     "static/media/blueMark.svg": "/shop-abroad/static/media/blueMark.b4919069b175bec01a9a.svg",
-    "main.3eb26b5b.css.map": "/shop-abroad/static/css/main.3eb26b5b.css.map",
-    "main.f1c1094d.js.map": "/shop-abroad/static/js/main.f1c1094d.js.map",
+    "main.20f2f1d1.css.map": "/shop-abroad/static/css/main.20f2f1d1.css.map",
+    "main.20bbb106.js.map": "/shop-abroad/static/js/main.20bbb106.js.map",
     "787.e8296182.chunk.js.map": "/shop-abroad/static/js/787.e8296182.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eb26b5b.css",
-    "static/js/main.f1c1094d.js"
+    "static/css/main.20f2f1d1.css",
+    "static/js/main.20bbb106.js"
   ]
 }
