@@ -42,12 +42,18 @@ export  function ModalTypeBiggest({modal,setModal}) {
                                 </div>
                                 <div className={s.imagesFlex}>
                                     <div>
-                                        <img src={telegram} alt="telegram"/>
-                                        <div>Telegram-канал</div>
+                                        <a className={s.links} href="https://t.me/shop_abroad">
+                                            <img src={telegram} alt="telegram"/>
+                                            <div>Telegram-канал</div>
+                                        </a>
+
                                     </div>
                                     <div>
-                                        <img src={avito} alt="avito"/>
-                                        <div>Авито</div>
+                                        <a className={s.links} href="https://www.avito.ru/user/629a95d34d6a977f7d5d563b34442b3b/profile?src=sharing">
+                                            <img src={avito} alt="avito"/>
+                                            <div>Авито</div>
+                                        </a>
+
                                     </div>
                                 </div>
                                 <div className={s.littleSubtitle}>

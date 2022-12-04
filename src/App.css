@@ -1,6 +1,8 @@
 .App {
   margin: 0 auto;
   font-family: Gilroy-Regular, sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 @media (max-width: 1350px){

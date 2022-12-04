@@ -22,8 +22,10 @@ export const Tariffs = () => {
                                 </div>
                                 <div className={s.list}>
                                     -Москве <br/>
-                                    -Челябинске <br/>
-                                    -Новосибирске
+                                    -Санкт-Петербурге <br/>
+                                    -Новосибирске <br/>
+                                    -Казани <br/>
+                                    -Челябинске
                                 </div>
                                 <br/>
                                 <div className={s.clasicSub}>
@@ -43,8 +45,10 @@ export const Tariffs = () => {
                                 </div>
                                 <div className={s.list}>
                                     -Москве <br/>
-                                    -Челябинске <br/>
-                                    -Новосибирске
+                                    -Санкт-Петербурге <br/>
+                                    -Новосибирске <br/>
+                                    -Казани <br/>
+                                    -Челябинске
                                 </div>
                                 <br/>
                                 <div className={s.clasicSub}>
@@ -54,7 +58,7 @@ export const Tariffs = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">
-                            <Accordion.Header>Экспресс +</Accordion.Header>
+                            <Accordion.Header>Экспресс плюс</Accordion.Header>
                             <Accordion.Body>
                                 <div className={s.clasicSub}>
                                     Тариф доступен не для всех интернет-магазинов, подробности уточняйте у оператора при заказе
@@ -68,8 +72,10 @@ export const Tariffs = () => {
                                 </div>
                                 <div className={s.list}>
                                     -Москве <br/>
-                                    -Челябинске <br/>
-                                    -Новосибирске
+                                    -Санкт-Петербурге <br/>
+                                    -Новосибирске <br/>
+                                    -Казани <br/>
+                                    -Челябинске
                                 </div>
                                 <br/>
                                 <div className={s.clasicSub}>

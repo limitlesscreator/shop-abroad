@@ -6,7 +6,7 @@ export const ListBannedProducts = () => {
         <>
             <div className={s.main}>
                 <div className={'titleForModals'}>
-                    Возврат товара
+                    Список запрещённых веществ
                 </div>
                 <div className={s['wrapper']}>
                     <div className={s['container']}>

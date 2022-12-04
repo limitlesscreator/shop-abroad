@@ -12,22 +12,6 @@ export default function ModalTypeOne({title,modal,setModal}) {
     const toggleModal = () => {
         setModal(!modal);
     };
-
-    // if (modal) {
-    //     // document.body.classList.add('active-modalMy')
-    //     document.body.style.overflowY = 'none'
-    //
-    //     console.log('add')
-    // }
-    // if (modal){
-    //     document.body.style.overflowY = 'auto'
-    // }
-    // else {
-    //     console.log('what')
-    //
-    //     // document.body.classList.remove('active-modalMy')
-    // }
-
     return (
         <>
             {modal && (
@@ -38,10 +22,10 @@ export default function ModalTypeOne({title,modal,setModal}) {
                                 <a href="https://t.me/shop_abroad"><img src={telegram} alt="telegram"/></a>
                                 <a href="https://wa.me/message/T5KNG6Q7CQ7XM1"><img src={whatsapp} alt="whatsApp"/></a>
                             </div>
-                            <div className={s.positionDiv}>
-                                <CheckBox isChecked={isChecked} setIsChecked={setIsChecked}/>
-                                <span className={s.notRobot}>Я не робот</span>
-                            </div>
+                            {/*<div className={s.positionDiv}>*/}
+                            {/*    <CheckBox isChecked={isChecked} setIsChecked={setIsChecked}/>*/}
+                            {/*    <span className={s.notRobot}>Я не робот</span>*/}
+                            {/*</div>*/}
                             <p className={s.subTitle}>
                                 {title}
                             </p>

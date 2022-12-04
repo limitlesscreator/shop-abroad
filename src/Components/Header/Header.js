@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Header.module.sass'
-import logo from '../../img/logo.png'
+import logo from '../../img/logo.svg'
 import telegram from '../../img/telegram.svg'
 import whatsapp from '../../img/whatsApp.svg'
 import {Link, NavLink} from "react-router-dom";
@@ -17,6 +17,7 @@ export const Header = () => {
                         <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/list'}>Список магазинов</NavLink>
                         <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/contact'}>Связаться</NavLink>
                         <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/information'}>Информация</NavLink>
+                        <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/vat'}>VAT</NavLink>
                     </ul>
                 </div>
                 <div className={s.socials}>

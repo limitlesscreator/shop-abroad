@@ -117,7 +117,7 @@
   color: #3253FF
   font-size: 40px
   height: 170px
-  width: 240px
+  width: 260px
   margin-left: 120px
   display: flex
   justify-content: center
@@ -127,13 +127,16 @@
   border-image: linear-gradient(0.25turn, rgba(56,2,155,0), rgb(255, 255, 255), rgba(56,2,155,0))
   border-image-slice: 1
   @media (max-width: 1350px)
-
+    text-align: center
   @media (max-width: 1200px)
     order: -1
     margin-left: 0
     margin-bottom: 50px
+    text-align: center
 
   @media (max-width: 900px)
+    font-size: 25px
+    height: 130px
 
   @media (max-width: 760px)
 
@@ -141,6 +144,19 @@
 
   @media (max-width: 320px)
 
+
+.special
+  display: none
+  @media (max-width: 1350px)
+    display: block
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
 .subtitle
   margin-top: 40px
   color: white
@@ -185,6 +201,16 @@
     color: black
     cursor: pointer
     width: 312px
+    &:hover
+      color: white
+      border: solid 1px white
+      background: #1F1F1F
+      transition: .3s
+    &:active
+      color: white
+      transition: .3s
+      background: #3253FF
+      border: solid 1px #353535
     @media (max-width: 1350px)
 
     @media (max-width: 1200px)

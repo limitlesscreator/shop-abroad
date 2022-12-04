@@ -24,18 +24,20 @@ export const Contacts = () => {
                         <h3 className={s.title}>Служба поддержки</h3>
                         <div className={s.socials}>
                             <a href="https://t.me/shop_abroad_support"><img src={telegram} alt="telegram"/></a>
-                            <a style={{cursor: 'pointer'}} href=""><img src={whatsapp} alt="whatsapp"/></a>
+                            <a style={{cursor: 'pointer'}} href="https://wa.me/message/T5JVB2BEB4BPP1"><img src={whatsapp} alt="whatsapp"/></a>
                         </div>
                         <div className={s.subTitle}>
                             Служба поддержки работает <br/>
                             с 11:00 до 22:00 по МСК
+                        </div>                        <div className={s.subTitle}>
+                        support@shop-abroad.ru
                         </div>
                     </div>
                     <div className={s.specialNumber}>
                         <h3 className={s.title}>Клиентский сервис</h3>
                         <div className={s.number}>
-                            <img className={s.logoNumber} src={phone} alt="phone"/>
-                            <div className={s.numberPhone}>8 (800) 333 9183</div>
+                            {/*<div className={s.numberPhone}>8 (800) 333 9183 <img className={s.logoNumber} src={phone} alt="phone"/></div>*/}
+                            <a href={'tel:+88003339183'} className={s.numberPhone}>8 (800) 333 9183 <img className={s.logoNumber} src={phone} alt="phone"/></a>
                         </div>
                         <div className={s.subTitle}>
                             ООО "ЖОЗЕФИНА" <br/>

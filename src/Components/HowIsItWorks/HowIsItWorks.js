@@ -12,7 +12,7 @@ export const HowIsItWorks = ({setModalTypeOneOrder}) => {
                 </div>
                 <div className={s.elem}>
                     <div className={s.sircle}>02</div>
-                    <div className={s.title}>Интернет-магазин</div>
+                    <div className={s.title}>Открываете любой интернет-магазин</div>
                 </div>
                 <div className={s.elem}>
                     <div className={s.sircle}>03</div>
@@ -27,17 +27,12 @@ export const HowIsItWorks = ({setModalTypeOneOrder}) => {
                     <div className={s.sircle}>05</div>
                     <div className={s.title}>Получаем посылку с товаром и отправляем вам</div>
                 </div>
-                <div className={s.elem}>
+                <div className={s.elem}>А
                     <div className={s.sircle}>06</div>
-                    <div className={s.title}>Вы получаете заказ уже через 15 дней после отправки</div>
-                </div>
-                <div className={s.elem}>
-                    <div className={s.sircle}>07</div>
-                    <div className={s.title}>Вы и ваша посылка вместе</div>
+                    <div className={s.title}>Вы получаете заказ уже через 15 дней после оплаты</div>
                 </div>
             </div>
             <button onClick={() => setModalTypeOneOrder(true)}>Сделать заказ</button>
-            <Gallery/>
         </div>
     );
 };

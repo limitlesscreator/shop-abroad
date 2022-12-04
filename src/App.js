@@ -19,6 +19,11 @@ import {TariffComission} from "./Components/WordDocuments/Commission/TariffComis
 import {Commission} from "./Components/WordDocuments/Commission/Commission";
 import s from './App.module.sass'
 import {BoostrapHeader} from "./Components/BoostrapHeader";
+import {Politics} from "./Components/Politics/Politics";
+import {Agreement} from "./Components/Agreement/Agreement";
+import {CashBack} from "./Components/CashBack/CashBack";
+import {Vat} from "./Components/Vat/Vat";
+import {HowIsItWorksPage} from "./Components/HowIsItWorks/HowIsItWorksPage";
 
 function App() {
     let [biggesModal, setBiggesModal] = useState(false)
@@ -36,7 +41,7 @@ function App() {
             <div className={s.position}>
                 <Routes>
                     <Route  path={'/'} element={<DollarRate modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage} changeUrl={changeUrl} setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
-                    <Route path={'/howitworks'} element={<HowIsItWorks setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
+                    <Route path={'/howitworks'} element={<HowIsItWorksPage setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
                     <Route path={'/follow'} element={<FollowPackage modalCheckPackage={modalCheckPackage} setModalCheckPackage={setModalCheckPackage}/>}/>
                     <Route path={'/list'} element={<ShopList setModalTypeOneOrder={setModalTypeOneOrder}/>}/>
                     <Route path={'/contact'} element={<Contacts/>}/>
@@ -49,6 +54,10 @@ function App() {
                     <Route path={'/faq'} element={<Faq/>}/>
                     <Route path={'/returns'} element={<Returns/>}/>
                     <Route path={'/bannedProducts'} element={<ListBannedProducts/>}/>
+                    <Route path={'/politics'} element={<Politics/>}/>
+                    <Route path={'/agreement'} element={<Agreement/>}/>
+                    <Route path={'/cashback'} element={<CashBack/>}/>
+                    <Route path={'/vat'} element={<Vat/>}/>
                 </Routes>
             </div>
             <ModalTypeOne  title={'Служба поддержки работает\n' +
@@ -56,7 +65,7 @@ function App() {
             <ModalTypeOne modal={modalTypeOneOrder} setModal={setModalTypeOneOrder} title={'Заказы обрабатываются\n' +
             'с 11:00 до 22:00 по МСК'}/>
             <ModalTypeBiggest modal={biggesModal} setModal={setBiggesModal}/>
-            <div className={s.wrapperFooter}><Footer changeUrl={changeUrl}/></div>
+            <Footer changeUrl={changeUrl}/>
         </div>
     );
 }

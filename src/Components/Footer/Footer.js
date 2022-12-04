@@ -4,12 +4,18 @@ import avito from '../../../src/img/avito.svg'
 export const Footer = ({changeUrl}) => {
     return (
         <footer>
-            <a href="https://docs.google.com/document/d/1S8d8ZeAq9wSlFzc_tbq52YnT0B-rVPvPWcmYjy8oGKo/edit">политика конфиденциальности</a>
+            <div className={s.link}>
+                <div onClick={() => changeUrl('/politics')} >Политика конфиденциальности</div>
+                <div onClick={() => changeUrl('/agreement')} >Соглашение о предоставлении услуг сервисом</div>
+                <div onClick={() => changeUrl('/vat')} >Возмещение Налога | VAT</div>
+            </div>
+
             <div className={s.buttons}>
                 {/*<button >Наш TLG канал</button>*/}
                 <button onClick={() => changeUrl('/list')}>Список магазинов</button>
                 <button onClick={() => changeUrl('/contact')}>Связаться</button>
                 <button onClick={() => changeUrl('/information')}>Информация</button>
+                <button onClick={() => changeUrl('/cashback')}>CashBack</button>
             </div>
             {/*<a href="#"><img src={avito} alt="avito"/></a>*/}
         </footer>

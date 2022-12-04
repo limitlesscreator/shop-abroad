@@ -5,6 +5,7 @@ import stockX from '../../img/stockX.png'
 import amazon from '../../img/amazon.png'
 import farfetch from '../../img/farfetch.png'
 import {HowIsItWorks} from "../HowIsItWorks/HowIsItWorks";
+import {Gallery} from "../Gallery/Gallery";
 
 export const DollarRate = ({setModalTypeOneOrder, changeUrl, modalCheckPackage, setModalCheckPackage}) => {
     const [rate, setRate] = useState(null)
@@ -29,14 +30,16 @@ export const DollarRate = ({setModalTypeOneOrder, changeUrl, modalCheckPackage, 
                 <div className={s.flexElem}>
                     <h1 className={s.title}><span><span>Доставим ваши заказы со всего мира за 15 дней</span></span></h1>
                     <div className={s.rate}>{rate ? <div>
-                            <div>Курс $ {rate[0].exchange_rate}</div>
+                            <div>Курсы <br className={s.special}/>$ {rate[0].exchange_rate}</div>
                             <div>€ {rate[1].exchange_rate}</div>
                         </div>
 
                         : null}
                     </div>
                 </div>
-                <div className={s.subtitle}>Надёжный и быстрый сервис доставки заказов с любых интернет магазинов мира
+                <div className={s.subtitle}
+                >
+                    Надежный и быстрый сервис доставки заказов с любых интернет-магазинов мира.
                 </div>
                 <div className={s.buttons}>
                     <button onClick={() => changeUrl('/howitworks')}>Как это работает</button>
@@ -49,7 +52,8 @@ export const DollarRate = ({setModalTypeOneOrder, changeUrl, modalCheckPackage, 
             </div>
 
 
-            <HowIsItWorks setModalTypeOneOrder={setModalTypeOneOrder}/>
+            {/*<HowIsItWorks setModalTypeOneOrder={setModalTypeOneOrder}/>*/}
+            <Gallery/>
         </div>
     );
 };

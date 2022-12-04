@@ -66,7 +66,10 @@ body {
 .mySwiper2 {
     height: 460px;
     width: 648px;
+}
 
+body{
+    zoom: 85%;
 }
 
 .mySwiper {

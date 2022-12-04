@@ -35,9 +35,31 @@ body.active-modalMy {
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: #1F1F1F;
-  padding: 14px 28px 68px 28px;
+  padding: 14px 70px 68px 70px;
   border-radius: 3px;
   max-width: 536px;
+  border: solid 2px white
+}
+@media (max-width: 1350px){
+  .modal-contentMy{
+    padding: 14px 18px 68px 18px;
+  }
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 900px){
+
+}
+
+@media (max-width: 760px){
+
+}
+
+@media (max-width: 480px){
+
 }
 
 

@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {Link, NavLink} from "react-router-dom";
 import s from "./BoostrapHeader.module.sass";
-import logo from "../img/logo.png";
+import logo from "../img/logo.svg";
 import React from "react";
 
 export function BoostrapHeader({changeUrl}) {
@@ -19,7 +19,7 @@ export function BoostrapHeader({changeUrl}) {
     }
     return (
         <>
-                <Navbar collapseOnSelect  key='expand' bg="dark"  expand='expand' variant="dark" className="mb-3">
+                <Navbar fixed="top" collapseOnSelect  key='expand' bg="dark"  expand='expand' variant="dark" className="mb-3">
                     <Container  fluid>
                         <Navbar.Brand style={{width: '220px'}}  href="#">
                             <Link to={'/'} className={s.logo}><img className={s.logo} src={logo} alt="logo"/></Link>
@@ -43,6 +43,7 @@ export function BoostrapHeader({changeUrl}) {
                                             <div onClick={() => {changeUrl('/list');closeWindow()}}>Список магазинов</div>
                                             <div onClick={() => {changeUrl('/contact');closeWindow()}}>Связаться</div>
                                             <div onClick={() => {changeUrl('/information');closeWindow()}}>Информация</div>
+                                            <div onClick={() => {changeUrl('/vat');closeWindow()}}>VAT</div>
                                         </ul>
                                     </div>
                                 </Nav>
