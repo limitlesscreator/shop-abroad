@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header>
             <div className={s.position}>
-                <Link to={'/'} className={s.logo}><img className={s.photoLogo} src={logo} alt="logo"/></Link>
+                <Link to={'/shop-abroad'} className={s.logo}><img className={s.photoLogo} src={logo} alt="logo"/></Link>
                 <div className={s.nav}>
                     <ul>
                         <NavLink style={({ isActive }) => isActive ? {color:'#3253FF'} : {}} to={'/howitworks'}>Как это работает</NavLink>
